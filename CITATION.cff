@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: >-
+  Pretrained foundation-model embeddings versus handcrafted radiomics
+  for medical image classification and prognostic tasks — analysis code and data
+message: >-
+  If you use this code or data, please cite both the repository
+  and the associated manuscript (once published).
+type: software
+authors:
+  - given-names: W. A. I. C.
+    family-names: Kumarananda
+    email: iran.wanniarachchige@student.adelaide.edu.au
+    affiliation: Independent Researcher, Adelaide, South Australia, Australia
+identifiers:
+  - type: other
+    value: 'PROSPERO:CRD420261393443'
+    description: PROSPERO systematic-review prospective registration
+keywords:
+  - radiomics
+  - foundation models
+  - medical imaging
+  - meta-analysis
+  - systematic review
+  - PRISMA 2020
+  - BiomedCLIP
+  - RadImageNet
+  - PROBAST
+  - CLAIM
+  - RQS
+license: MIT
+license-url: 'https://opensource.org/licenses/MIT'
+repository-code: 'https://github.com/REPLACE_WITH_GITHUB_USERNAME/REPLACE_WITH_REPO_NAME'
+abstract: >-
+  Reproducibility package for a PRISMA-2020 systematic review and
+  random-effects meta-analysis comparing pretrained foundation-model
+  embeddings versus handcrafted radiomics across 28 head-to-head studies.
+  Contains the analysis pipeline (Python + R), screening logs, final
+  corpus with 33 extracted fields, quality-appraisal scores (RQS, CLAIM,
+  PROBAST), inter-rater reliability data, and PRISMA-mandated
+  supplementary PDFs (search strategy, extraction form, reconciliation
+  log, exclusion taxonomy).

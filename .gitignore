@@ -1,0 +1,103 @@
+# --- Outputs and build artefacts ---
+outputs/
+phase5_outputs/
+*.png
+*.pdf
+*.svg
+!supplementary/*.pdf
+!docs/*.pdf
+
+# --- Secrets — NEVER commit ---
+*.env
+.env
+.env.*
+*api_key*
+*api-key*
+*apikey*
+*secret*
+*token*
+*.pem
+*.key
+credentials*
+*Open AI*
+*openai*key*
+config.yaml
+config.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- R ---
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# --- LaTeX (in case anyone compiles bibtex locally) ---
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+
+# --- Editor and OS detritus ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# --- Manuscript source (held back until acceptance) ---
+overleaf_project/
+*manuscript*
+27_Manuscript_Draft.md
+COVER_LETTER*
+Cover_Letter*
+Title_Page*
+Disclosure_Paragraph*
+main.tex
+table1.tex
+prisma_checklist.tex
+
+# --- Third-party copyrighted material (PDFs of cited papers) ---
+*.pdf.bak
+1-s2.0-*.pdf
+bmj.n71.*
+Lambin_*.pdf
+mongan-et-al-*.pdf
+PRISMA_2020_expanded_checklist.pdf
+330_2024_*
+201246.pdf
+
+# --- Submission artefacts ---
+EURA-S-*.pdf
+*EM_submission*
