@@ -10,7 +10,7 @@ Usage:
 Requires: standard library only (urllib, xml.etree). No pip installs needed.
 
 Output:
-    overwrites overleaf_project/references.bib
+    overwrites data/references.bib
 """
 import urllib.request
 import urllib.parse
@@ -20,7 +20,8 @@ import re
 from pathlib import Path
 
 # === Paths ===
-BIB = Path(r"overleaf_project/references.bib")
+BIB = Path(__file__).resolve().parent.parent / "data" / "references.bib"
+BIB.parent.mkdir(parents=True, exist_ok=True)
 
 # === All 28 corpus PMIDs in Order ===
 PMIDS = [

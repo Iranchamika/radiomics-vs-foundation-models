@@ -190,4 +190,15 @@ for r in data:
 lines.append(r"")
 lines.append(r"\end{longtable}")
 lines.append(r"\end{footnotesize}")
-lines.append(r"
+lines.append(r"")
+lines.append(r"\par\vspace{4pt}")
+lines.append(r"\footnotesize $n_{\text{tot}}$, sum of training, internal-test, and external-test cohort sizes; Ext, external validation cohort present (Y/N); Met, primary discrimination metric reported (AUC unless noted); $\Delta$, FM-arm value minus radiomics-arm value (positive favours FM); PB, PROBAST overall risk of bias (H = High, U = Unclear, L = Low). Citations link to the PMID-keyed reference entries.")
+lines.append(r"\normalsize")
+lines.append(r"\end{landscape}")
+lines.append(r"")
+
+OUT_TEX.parent.mkdir(parents=True, exist_ok=True)
+OUT_TEX.write_text("\n".join(lines), encoding="utf-8")
+print(f"Wrote {OUT_TEX}")
+print(f"  {len(data)} data rows -> 1 longtable")
+print(f"  first-author surnames matched: {sum(1 for v in pmid_to_author.values() if v)}/{len(pmid_to_author)}")

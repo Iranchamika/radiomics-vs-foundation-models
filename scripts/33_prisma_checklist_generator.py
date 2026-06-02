@@ -9,7 +9,7 @@ PRISMA 2020 reference:
   doi:10.1136/bmj.n71
 
 Writes:
-  - overleaf_project/prisma_checklist.tex   (\input-able from main.tex)
+  - outputs/prisma_checklist.tex   (\input-able from main.tex)
 
 Run on Windows:
     cd .
@@ -17,7 +17,8 @@ Run on Windows:
 """
 from pathlib import Path
 
-OUT_TEX = Path(r"overleaf_project/prisma_checklist.tex")
+ROOT = Path(__file__).resolve().parent.parent
+OUT_TEX = ROOT / "outputs" / "prisma_checklist.tex"
 
 # PRISMA 2020 checklist: (Section, Item #, Checklist item description, Reported on page/section)
 # All 27 items unpacked into the 42 line items the official .docx file uses.
@@ -254,6 +255,7 @@ lines.append(r"\end{longtable}")
 lines.append(r"\end{footnotesize}")
 lines.append(r"")
 
+OUT_TEX.parent.mkdir(parents=True, exist_ok=True)
 OUT_TEX.write_text("\n".join(lines), encoding="utf-8")
 print(f"Wrote {OUT_TEX}")
-print(f"  {len(items)} checklist lin
+print(f"  {len(items)} checklist line items -> 1 longtable")

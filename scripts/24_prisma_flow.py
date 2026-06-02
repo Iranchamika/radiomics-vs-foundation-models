@@ -145,4 +145,13 @@ draw_box(4, 3.0, 4, 1.2,
 ax.text(5, 0.5,
         "AI-assisted title/abstract pre-screen with reviewer adjudication.\n"
         "Cohen kappa = 0.41 (95% CI 0.08-0.75).",
-        ha="center", fontsize=8, s
+        ha="center", fontsize=8, style="italic", color="#666")
+
+plt.tight_layout()
+plt.savefig(OUT / "prisma_2020_flow.png", dpi=300, bbox_inches="tight")
+plt.savefig(OUT / "prisma_2020_flow.pdf", bbox_inches="tight")
+plt.close()
+print(f"Saved {OUT / 'prisma_2020_flow.png'}")
+print(f"Saved {OUT / 'prisma_2020_flow.pdf'}")
+print()
+print("NOTE: Edit the exclusion-reasons dict at top of script to match your actual screening log counts.")
