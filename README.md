@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](LICENSE-data)
 [![PROSPERO](https://img.shields.io/badge/PROSPERO-CRD420261393443-orange.svg)](https://www.crd.york.ac.uk/prospero/)
+[![DOI](https://zenodo.org/badge/1245520162.svg)](https://doi.org/10.5281/zenodo.20502586)
 
 Reproducibility package for the systematic review and meta-analysis
 

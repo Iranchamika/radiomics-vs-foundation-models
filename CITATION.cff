@@ -29,7 +29,7 @@ keywords:
   - RQS
 license: MIT
 license-url: 'https://opensource.org/licenses/MIT'
-repository-code: 'https://github.com/REPLACE_WITH_GITHUB_USERNAME/REPLACE_WITH_REPO_NAME'
+repository-code: 'https://github.com/Iranchamika/radiomics-vs-foundation-models'
 abstract: >-
   Reproducibility package for a PRISMA-2020 systematic review and
   random-effects meta-analysis comparing pretrained foundation-model
