@@ -9,7 +9,7 @@ Reproducibility package for the systematic review and meta-analysis
 
 > **Pretrained foundation-model embeddings versus handcrafted radiomics for medical image classification and prognostic tasks: a systematic review and meta-analysis**
 
-PROSPERO registration: **CRD420261393443**. Manuscript currently under peer review at *European Radiology*.
+PROSPERO registration: **CRD420261393443**. Manuscript currently under peer review at *Insights into Imaging*.
 
 ## What is in this repository
 
